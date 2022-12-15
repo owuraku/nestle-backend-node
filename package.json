@@ -1,0 +1,47 @@
+{
+	"name": "nestle-backend",
+	"version": "1.0.0",
+	"description": "Nestle Test App Backend In NODE JS",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npm run lint && nodemon main.js",
+		"format": "npx prettier --write \"**/*.js\" \"**/*.js\"",
+		"lint": "npx eslint \"**/*.js\" --fix"
+	},
+	"dependencies": {
+		"bcrypt": "^5.1.0",
+		"body-parser": "^1.20.1",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"dotenv-expand": "^9.0.0",
+		"express": "^4.18.2",
+		"express-validator": "^6.14.2",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.8.0",
+		"nodemailer": "^6.8.0",
+		"nodemon": "^2.0.20"
+	},
+	"devDependencies": {
+		"eslint": "^8.29.0",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-n": "^15.6.0",
+		"eslint-plugin-promise": "^6.1.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/owuraku/nestle-backend-node.git"
+	},
+	"keywords": [
+		"nestle",
+		"backend",
+		"nodejs"
+	],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/owuraku/nestle-backend-node/issues"
+	},
+	"homepage": "https://github.com/owuraku/nestle-backend-node#readme"
+}
