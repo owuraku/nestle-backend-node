@@ -63,6 +63,7 @@ class AuthController {
 
 	async protected(req, res) {
 		res.send({ message: 'You need to be logged in to see this' });
+		//
 	}
 }
 
