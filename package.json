@@ -7,7 +7,8 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "npm run lint && nodemon main.js",
 		"format": "npx prettier --write \"**/*.js\" \"**/*.js\"",
-		"lint": "npx eslint \"**/*.js\" --fix"
+		"lint": "npx eslint \"**/*.js\" --fix",
+		"start:prod": "node main.js"
 	},
 	"dependencies": {
 		"bcrypt": "^5.1.0",
