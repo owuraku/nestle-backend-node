@@ -8,7 +8,9 @@
 		"start": "npm run lint && nodemon main.js",
 		"format": "npx prettier --write \"**/*.js\" \"**/*.js\"",
 		"lint": "npx eslint \"**/*.js\" --fix",
-		"start:prod": "node main.js"
+		"start:prod": "node main.js",
+		"husky:prepare": "husky install && husky set .husky/pre-commit \"npm run format && npm run lint\"",
+		"prepare": "is-ci || npm run husky:prepare"
 	},
 	"dependencies": {
 		"bcrypt": "^5.1.0",
@@ -30,7 +32,8 @@
 		"eslint-config-standard": "^17.0.0",
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-n": "^15.6.0",
-		"eslint-plugin-promise": "^6.1.1"
+		"eslint-plugin-promise": "^6.1.1",
+		"husky": "^8.0.2"
 	},
 	"repository": {
 		"type": "git",
